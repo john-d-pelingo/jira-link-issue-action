@@ -1,0 +1,64 @@
+{
+  "name": "node-typescript-template",
+  "version": "0.0.1",
+  "description": "This is a template repo for Node projects written in TypeScript.",
+  "private": false,
+  "homepage": "https://github.com/john-d-pelingo/node-typescript-template",
+  "author": {
+    "email": "johndarrylpelingo@gmail.com",
+    "name": "John Darryl Pelingo",
+    "url": "https://johndpelingo.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/john-d-pelingo/node-typescript-template",
+    "directory": "packages/prettier-config"
+  },
+  "bugs": {
+    "url": "https://github.com/john-d-pelingo/node-typescript-template/issues"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "template"
+  ],
+  "prettier": "@jdp-dev/prettier-config",
+  "main": "./build/index.js",
+  "scripts": {
+    "--DEVELOPMENT--": "echo \"--DEVELOPMENT--\" && exit 1",
+    "dev": "ts-node-dev src/index.ts",
+    "format": "prettier --write 'src/**/*.{css,js,ts,tsx}' '**/*.md'",
+    "lint": "eslint ./src/ --ext .js,.ts,.tsx --max-warnings 0 --report-unused-disable-directives",
+    "sweep": "rimraf build",
+    "test": "exit 0",
+    "test:t": "tsc --noEmit",
+    "--BUILD--": "echo \"--BUILD--\" && exit 1",
+    "prebuild": "run-s sweep lint test:t test",
+    "build": "tsc",
+    "--PRODUCTION--": "echo \"--PRODUCTION--\" && exit 1",
+    "start": "NODE_ENV=production node build/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@jdp-dev/commitlint-config": "^0.0.11",
+    "@jdp-dev/eslint-config-typescript": "^0.0.11",
+    "@jdp-dev/prettier-config": "^0.0.11",
+    "@jdp-dev/tsconfig": "^0.0.11",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "@jdp-dev/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "isolatedModules": false,
+    "module": "CommonJS",
+    "noEmit": false,
+    "outDir": "./build",
+    "rootDir": "./src"
+  },
+  "include": ["src"]
+}

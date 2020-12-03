@@ -1,0 +1,9 @@
+{
+  "assignees": ["john-d-pelingo"],
+  "extends": ["config:base"],
+  "groupName": "all",
+  "rangeStrategy": "replace",
+  "prCreation": "status-success",
+  "schedule": ["every weekend"],
+  "timezone": "Europe/Berlin"
+}
