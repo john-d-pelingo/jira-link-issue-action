@@ -58,17 +58,17 @@ const getCommentArguments = ({
   repo: string
 } => {
   const {
-    payload: { pull_request: pullRequest, issue, repository },
+    payload: { pull_request: pullRequest, repository },
   } = context
 
-  const issueNumber = pullRequest?.number || issue?.number
+  const issueNumber = pullRequest?.number
 
   if (!issueNumber) {
-    throw new Error('Unable to retrieve the issue number.')
+    throw new Error('Unable to retrieve the pull request number.')
   }
 
   if (!repository || !repository.full_name) {
-    throw new Error('Unable to retrieve the repository object.')
+    throw new Error('Unable to retrieve the repository name.')
   }
 
   const [owner, repo] = repository.full_name.split('/')

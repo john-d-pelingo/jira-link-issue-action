@@ -863,13 +863,13 @@ const getTicketId = ({ boardName, branchName, }) => {
     return result[0];
 };
 const getCommentArguments = ({ atlassianDomain, ticketId, }) => {
-    const { payload: { pull_request: pullRequest, issue, repository }, } = github_1.context;
-    const issueNumber = (pullRequest === null || pullRequest === void 0 ? void 0 : pullRequest.number) || (issue === null || issue === void 0 ? void 0 : issue.number);
+    const { payload: { pull_request: pullRequest, repository }, } = github_1.context;
+    const issueNumber = pullRequest === null || pullRequest === void 0 ? void 0 : pullRequest.number;
     if (!issueNumber) {
-        throw new Error('Unable to retrieve the issue number.');
+        throw new Error('Unable to retrieve the pull request number.');
     }
     if (!repository || !repository.full_name) {
-        throw new Error('Unable to retrieve the repository object.');
+        throw new Error('Unable to retrieve the repository name.');
     }
     const [owner, repo] = repository.full_name.split('/');
     return {
