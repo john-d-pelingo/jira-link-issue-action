@@ -81,7 +81,7 @@ const getCommentArguments = ({
   }
 }
 
-export const run = async (): Promise<void> => {
+export const main = async (): Promise<void> => {
   try {
     const { atlassianDomain, boardName, branchName, githubToken } = getInputs()
     const ticketId = getTicketId({
@@ -113,5 +113,5 @@ export const run = async (): Promise<void> => {
 }
 
 if (process.env.NODE_ENV !== 'test') {
-  run()
+  main()
 }

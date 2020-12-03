@@ -1,4 +1,3 @@
 # TODOs
 
-- add tests
-- extend env type
+- find a way to build the app
