@@ -1,0 +1,12 @@
+on: [pull_request]
+
+jobs:
+  test-github-action:
+    runs-on: ubuntu-latest
+    name: Test GitHub Action
+    steps:
+      - name: Test
+        uses: actions/jira-link-issue-action@v0.0.1
+        with:
+          atlassian-domain: 'https://johndpelingo.atlassian.net'
+          board-name: 'MEME'
