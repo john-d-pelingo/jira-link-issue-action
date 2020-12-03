@@ -27,7 +27,6 @@
   "main": "./build/index.js",
   "scripts": {
     "--DEVELOPMENT--": "echo \"--DEVELOPMENT--\" && exit 1",
-    "dev": "tsc --watch",
     "format": "prettier --write 'src/**/*.{css,js,ts,tsx}' '**/*.md'",
     "lint": "eslint ./src/ --ext .js,.ts,.tsx --max-warnings 0 --report-unused-disable-directives",
     "sweep": "rimraf build",
@@ -35,7 +34,7 @@
     "test:t": "tsc --noEmit",
     "--BUILD--": "echo \"--BUILD--\" && exit 1",
     "prebuild": "run-s sweep lint test:t test",
-    "build": "tsc",
+    "build": "ncc build src/index.ts --out build",
     "--PRODUCTION--": "echo \"--PRODUCTION--\" && exit 1",
     "release": "standard-version",
     "start": "NODE_ENV=production node build/index.js"
@@ -55,6 +54,7 @@
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
+    "@zeit/ncc": "^0.22.3",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",

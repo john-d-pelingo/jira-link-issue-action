@@ -1,12 +1,13 @@
+name: test
 on: [pull_request]
 
 jobs:
   test-github-action:
-    runs-on: ubuntu-latest
     name: Test GitHub Action
+    runs-on: ubuntu-latest
     steps:
       - name: Test
-        uses: john-d-pelingo/jira-link-issue-action@v0.0.3
+        uses: john-d-pelingo/jira-link-issue-action@v0.0.4
         with:
           atlassian-domain: 'https://johndpelingo.atlassian.net'
           board-name: 'MEME'
