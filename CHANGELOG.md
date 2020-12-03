@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v0.0.2...v0.0.3) (2020-12-03)
+
+
+### Features
+
+* test v0.0.3 ([a1a5f44](https://github.com/john-d-pelingo/jira-link-issue-action/commit/a1a5f44b4ec991ce276ff2fd7f13d9d70a80e9a7))
+
 ### 0.0.2 (2020-12-03)
 
 
