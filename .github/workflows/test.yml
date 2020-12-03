@@ -6,7 +6,7 @@ jobs:
     name: Test GitHub Action
     steps:
       - name: Test
-        uses: john-d-pelingo/jira-link-issue-action@v0.0.2
+        uses: ./
         with:
           atlassian-domain: 'https://johndpelingo.atlassian.net'
           board-name: 'MEME'
