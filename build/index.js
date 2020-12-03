@@ -862,7 +862,8 @@ module.exports = /******/ (function (modules, runtime) {
         if (!branchName) {
           throw new Error('Unable to retrieve the branch name.')
         }
-        const githubToken = process.env.GITHUB_TOKEN
+        const githubToken =
+          core_1.getInput('github-token') || process.env.GITHUB_TOKEN
         if (!githubToken) {
           throw new Error('Unable to retrieve the GitHub token.')
         }

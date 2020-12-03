@@ -17,6 +17,10 @@ inputs:
     description: 'The JIRA board name'
     required: true
 
+  github-token:
+    description: 'The GitHub token for API access. Can alternatively be defined in the env.'
+    required: false
+
 runs:
   using: 'node12'
   main: 'build/index.js'
