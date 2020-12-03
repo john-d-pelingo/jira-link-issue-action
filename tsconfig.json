@@ -6,7 +6,8 @@
     "module": "CommonJS",
     "noEmit": false,
     "outDir": "./build",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "target": "ES2019"
   },
   "include": ["src"]
 }

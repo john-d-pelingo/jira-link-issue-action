@@ -45,6 +45,46 @@ const getTicketId = ({
   return result[0]
 }
 
+const getCommentArguments = ({
+  atlassianDomain,
+  ticketId,
+}: {
+  atlassianDomain: string
+  ticketId: string
+}): {
+  body: string
+  issueNumber: number
+  owner: string
+  repo: string
+} => {
+  const {
+    payload: { pull_request: pullRequest, issue, repository },
+  } = context
+
+  const issueNumber = pullRequest?.number || issue?.number
+
+  if (!issueNumber) {
+    throw new Error('Unable to retrieve the issue number.')
+  }
+
+  if (!repository) {
+    throw new Error('Unable to retrieve the repository object.')
+  }
+
+  if (!repository.full_name) {
+    throw new Error('Unable to retrieve the repository name.')
+  }
+
+  const [owner, repo] = repository.full_name.split('/')
+
+  return {
+    body: `${atlassianDomain}/browse/${ticketId}`,
+    issueNumber,
+    owner,
+    repo,
+  }
+}
+
 export const run = async (): Promise<void> => {
   try {
     const { atlassianDomain, boardName, branchName, githubToken } = getInputs()
@@ -58,34 +98,18 @@ export const run = async (): Promise<void> => {
       return
     }
 
-    const {
-      payload: { pull_request: pullRequest, issue, repository },
-    } = context
-
-    if (!pullRequest) {
-      throw new Error('Unable to retrieve the pull request object.')
-    }
-
-    if (!issue) {
-      throw new Error('Unable to retrieve the issue object.')
-    }
-
-    if (!repository) {
-      throw new Error('Unable to retrieve the repository object.')
-    }
-
-    if (!repository.full_name) {
-      throw new Error('Unable to retrieve the repository name.')
-    }
+    const { body, issueNumber, owner, repo } = getCommentArguments({
+      atlassianDomain,
+      ticketId,
+    })
 
     const octokit = getOctokit(githubToken)
-    const [owner, repo] = repository.full_name.split('/')
 
     await octokit.issues.createComment({
+      body,
+      issue_number: issueNumber,
       owner,
       repo,
-      issue_number: issue.number,
-      body: `${atlassianDomain}/browse/${ticketId}`,
     })
   } catch (error) {
     setFailed(error)
