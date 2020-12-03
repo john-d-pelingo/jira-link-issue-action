@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v0.0.6...v0.0.7) (2020-12-03)
+
+
+### Features
+
+* provide github token ([0061496](https://github.com/john-d-pelingo/jira-link-issue-action/commit/0061496ef81e7593ceef8dafd342a41f9d20de1f))
+
 ### [0.0.6](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v0.0.5...v0.0.6) (2020-12-03)
 
 
