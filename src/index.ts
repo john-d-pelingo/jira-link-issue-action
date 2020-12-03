@@ -67,12 +67,8 @@ const getCommentArguments = ({
     throw new Error('Unable to retrieve the issue number.')
   }
 
-  if (!repository) {
+  if (!repository || !repository.full_name) {
     throw new Error('Unable to retrieve the repository object.')
-  }
-
-  if (!repository.full_name) {
-    throw new Error('Unable to retrieve the repository name.')
   }
 
   const [owner, repo] = repository.full_name.split('/')
@@ -116,6 +112,6 @@ export const run = async (): Promise<void> => {
   }
 }
 
-if (process.env['NODE_ENV'] !== 'test') {
+if (process.env.NODE_ENV !== 'test') {
   run()
 }
