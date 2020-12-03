@@ -1,6 +1,7 @@
 # jira-link-issue-action [![MIT License][shield-license]][license]
 
-[GitHub action](https://github.com/features/actions) for linking [JIRA](https://www.atlassian.com/software/jira) issues as a comment.
+[GitHub action](https://github.com/features/actions) for linking
+[JIRA](https://www.atlassian.com/software/jira) issues as a comment.
 
 ## License
 
