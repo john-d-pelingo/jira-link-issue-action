@@ -1,9 +1,9 @@
 {
-  "name": "node-typescript-template",
+  "name": "jira-link-issue-action",
   "version": "0.0.1",
-  "description": "This is a template repo for Node projects written in TypeScript.",
+  "description": "GitHub action for linking JIRA issues as a comment.",
   "private": false,
-  "homepage": "https://github.com/john-d-pelingo/node-typescript-template",
+  "homepage": "https://github.com/john-d-pelingo/jira-link-issue-action",
   "author": {
     "email": "johndarrylpelingo@gmail.com",
     "name": "John Darryl Pelingo",
@@ -12,16 +12,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/john-d-pelingo/node-typescript-template",
+    "url": "https://github.com/john-d-pelingo/jira-link-issue-action",
     "directory": "packages/prettier-config"
   },
   "bugs": {
-    "url": "https://github.com/john-d-pelingo/node-typescript-template/issues"
+    "url": "https://github.com/john-d-pelingo/jira-link-issue-action/issues"
   },
   "keywords": [
     "node",
     "typescript",
-    "template"
+    "github-action"
   ],
   "prettier": "@jdp-dev/prettier-config",
   "main": "./build/index.js",

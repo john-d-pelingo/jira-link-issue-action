@@ -1,7 +1,6 @@
-# node-typescript-template [![MIT License][shield-license]][license]
+# jira-link-issue-action [![MIT License][shield-license]][license]
 
-This is a template repo for [Node](https://nodejs.org/) projects written in
-[TypeScript](https://www.typescriptlang.org/).
+[GitHub action](https://github.com/features/actions) for linking [JIRA](https://www.atlassian.com/software/jira) issues as a comment.
 
 ## License
 
