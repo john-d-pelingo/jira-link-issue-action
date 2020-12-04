@@ -1,12 +1,12 @@
-name: Test GitHub Action
+name: Try GitHub Action
 on: [pull_request]
 
 jobs:
-  test-github-action:
-    name: Test GitHub Action
+  try-github-action:
+    name: Try GitHub Action
     runs-on: ubuntu-latest
     steps:
-      - name: Test
+      - name: Use this GitHub Action
         uses: john-d-pelingo/jira-link-issue-action@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

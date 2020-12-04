@@ -18,7 +18,7 @@ inputs:
     required: true
 
   github-token:
-    description: 'The GitHub token for API access. Can alternatively be defined in the env.'
+    description: 'The GitHub token for API access'
     required: false
 
 runs:
