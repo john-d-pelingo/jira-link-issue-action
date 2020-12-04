@@ -9,8 +9,10 @@ jobs:
     name: Try GitHub Action
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Use this GitHub Action
-        uses: john-d-pelingo/jira-link-issue-action@v1.0.3
+        uses: ./
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
