@@ -1,6 +1,6 @@
 {
   "name": "jira-link-issue-action",
-  "version": "0.0.9",
+  "version": "1.0.1",
   "description": "GitHub action for linking JIRA issues as a comment.",
   "private": false,
   "homepage": "https://github.com/john-d-pelingo/jira-link-issue-action",

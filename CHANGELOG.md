@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v0.0.8...v1.0.1) (2020-12-04)
+
+
+### Features
+
+* add bad path tests ([711db31](https://github.com/john-d-pelingo/jira-link-issue-action/commit/711db316cceaf7707260150fe94dfc6cdc14f280))
+* add build for PR ([6738681](https://github.com/john-d-pelingo/jira-link-issue-action/commit/67386814678597e2d8b412cf4ef923312c95b77d))
+* add codecov badge ([3f10089](https://github.com/john-d-pelingo/jira-link-issue-action/commit/3f10089cd2413c57bd2ca84bb11a80cc4c6e70ab))
+* add happy test ([a1fd81f](https://github.com/john-d-pelingo/jira-link-issue-action/commit/a1fd81fdc86fb59f7f7709ffe526cb9b7f429a29))
+* add initial test ([46d8e97](https://github.com/john-d-pelingo/jira-link-issue-action/commit/46d8e97cbc2ff8153876b1ff858bd2efa8b9dcbb))
+* add test back ([9d0a44e](https://github.com/john-d-pelingo/jira-link-issue-action/commit/9d0a44e410dbc0c6c79a4c532312f1d22a594ce1))
+* build at release ([78f7216](https://github.com/john-d-pelingo/jira-link-issue-action/commit/78f72161277363209107998dcd468f9c182bd606))
+* build master ([cd2c787](https://github.com/john-d-pelingo/jira-link-issue-action/commit/cd2c787417483284a65a14f03010919c34979c44))
+* checkout code ([282b496](https://github.com/john-d-pelingo/jira-link-issue-action/commit/282b4961a6f3bc382e1da1cdae6c8a1bbc5cbc7a))
+* checkout repo ([af1d7d1](https://github.com/john-d-pelingo/jira-link-issue-action/commit/af1d7d151bdd28cff4d836e3a7c20c10f4a8381a))
+* create coverage report ([f6dce2a](https://github.com/john-d-pelingo/jira-link-issue-action/commit/f6dce2a2375264f6388a1c622aaebc38a807561d))
+* format everything ([#5](https://github.com/john-d-pelingo/jira-link-issue-action/issues/5)) ([d89e1cf](https://github.com/john-d-pelingo/jira-link-issue-action/commit/d89e1cfa0496abdde01f3752c22de28d359bce11))
+* remove test action ([f30ffc9](https://github.com/john-d-pelingo/jira-link-issue-action/commit/f30ffc97e9ed57b70b48b7bdab7e1c370a4aca46))
+
 ### [0.0.8](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v0.0.7...v0.0.8) (2020-12-03)
 
 
