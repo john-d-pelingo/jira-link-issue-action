@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        uses: john-d-pelingo/jira-link-issue-action@v0.0.8
+        uses: john-d-pelingo/jira-link-issue-action@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

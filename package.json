@@ -1,6 +1,6 @@
 {
   "name": "jira-link-issue-action",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "GitHub action for linking JIRA issues as a comment.",
   "private": false,
   "homepage": "https://github.com/john-d-pelingo/jira-link-issue-action",
@@ -24,6 +24,11 @@
     "github-action"
   ],
   "prettier": "@jdp-dev/prettier-config",
+  "standard-version": {
+    "scripts": {
+      "prerelease": "yarn build"
+    }
+  },
   "main": "./build/index.js",
   "scripts": {
     "--DEVELOPMENT--": "echo \"--DEVELOPMENT--\" && exit 1",
