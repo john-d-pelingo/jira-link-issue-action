@@ -1,5 +1,8 @@
 name: Try GitHub Action
-on: [pull_request]
+
+on:
+  pull_request:
+    types: [opened]
 
 jobs:
   try-github-action:
@@ -7,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use this GitHub Action
-        uses: john-d-pelingo/jira-link-issue-action@v1.0.2
+        uses: john-d-pelingo/jira-link-issue-action@v1.0.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

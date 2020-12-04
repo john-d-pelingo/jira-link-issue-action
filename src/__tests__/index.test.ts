@@ -29,6 +29,7 @@ describe('index', () => {
 
   it('logs that the branch name cannot be retrieved when the env variable GITHUB_HEAD_REF is not defined', async () => {
     jest.spyOn(core, 'setFailed')
+    process.env.GITHUB_HEAD_REF = undefined
 
     await main()
 
