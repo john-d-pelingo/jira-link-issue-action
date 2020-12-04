@@ -1,0 +1,24 @@
+name: Build Master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build GitHub Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use Node 14
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: 14
+      - name: Install dependencies with yarn
+        run: yarn install --frozen-lockfile
+      - name: Run build command
+        run: yarn build
+      - name: Upload coverage to codecov
+        uses: codecov/codecov-action@v1

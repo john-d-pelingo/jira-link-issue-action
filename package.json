@@ -36,7 +36,7 @@
     "--BUILD--": "echo \"--BUILD--\" && exit 1",
     "prebuild": "run-s sweep lint test:t test",
     "build": "ncc build src/index.ts --out build",
-    "build:ci": "ncc build src/index.ts --out build",
+    "build:pr": "ncc build src/index.ts --out build",
     "--PRODUCTION--": "echo \"--PRODUCTION--\" && exit 1",
     "release": "standard-version",
     "start": "NODE_ENV=production node build/index.js"
