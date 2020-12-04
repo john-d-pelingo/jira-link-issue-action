@@ -5,6 +5,7 @@ import { WebhookPayload } from '@actions/github/lib/interfaces'
 
 import { main } from '..'
 const x = 2
+const y = 2
 describe('index', () => {
   const OLD_ENV = process.env
 
