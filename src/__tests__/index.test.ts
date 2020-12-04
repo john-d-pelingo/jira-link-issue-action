@@ -4,7 +4,7 @@ import { context } from '@actions/github'
 import { WebhookPayload } from '@actions/github/lib/interfaces'
 
 import { main } from '..'
-
+const x = 2
 describe('index', () => {
   const OLD_ENV = process.env
 
