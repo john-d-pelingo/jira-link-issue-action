@@ -854,7 +854,7 @@ const getInputs = () => {
         githubToken,
     };
 };
-const getTicketId = ({ boardName, branchName, }) => {
+const getIssueId = ({ boardName, branchName, }) => {
     const regex = new RegExp(`${boardName}-\\d+`, 'gi');
     const result = regex.exec(branchName);
     if (!result) {
@@ -862,7 +862,7 @@ const getTicketId = ({ boardName, branchName, }) => {
     }
     return result[0];
 };
-const getCommentArguments = ({ atlassianDomain, ticketId, }) => {
+const getCommentArguments = ({ atlassianDomain, issueId, }) => {
     const { payload: { pull_request: pullRequest, repository }, } = github_1.context;
     const issueNumber = pullRequest === null || pullRequest === void 0 ? void 0 : pullRequest.number;
     if (!issueNumber) {
@@ -873,7 +873,7 @@ const getCommentArguments = ({ atlassianDomain, ticketId, }) => {
     }
     const [owner, repo] = repository.full_name.split('/');
     return {
-        body: `${atlassianDomain}/browse/${ticketId}`,
+        body: `JIRA issue: ${atlassianDomain}/browse/${issueId}`,
         issueNumber,
         owner,
         repo,
@@ -882,17 +882,17 @@ const getCommentArguments = ({ atlassianDomain, ticketId, }) => {
 const main = async () => {
     try {
         const { atlassianDomain, boardName, branchName, githubToken } = getInputs();
-        const ticketId = getTicketId({
+        const issueId = getIssueId({
             boardName,
             branchName,
         });
-        if (!ticketId) {
-            core_1.info(`Could not extract the ticket id from branch: ${branchName}`);
+        if (!issueId) {
+            core_1.info(`Could not extract the issue ID from branch: ${branchName}`);
             return;
         }
         const { body, issueNumber, owner, repo } = getCommentArguments({
             atlassianDomain,
-            ticketId,
+            issueId,
         });
         const octokit = github_1.getOctokit(githubToken);
         await octokit.issues.createComment({

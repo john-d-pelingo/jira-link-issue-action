@@ -50,7 +50,7 @@ describe('index', () => {
     )
   })
 
-  it('logs that it could not extract the ticket ID and exits', async () => {
+  it('logs that it could not extract the issue ID and exits', async () => {
     jest.spyOn(core, 'setFailed')
     jest.spyOn(core, 'info')
     process.env.GITHUB_HEAD_REF = 'a-very-nice-branch-name'
@@ -61,7 +61,7 @@ describe('index', () => {
     expect(core.setFailed).toHaveBeenCalledTimes(0)
     expect(core.info).toHaveBeenCalledTimes(1)
     expect(core.info).toHaveBeenCalledWith(
-      'Could not extract the ticket id from branch: a-very-nice-branch-name',
+      'Could not extract the issue ID from branch: a-very-nice-branch-name',
     )
   })
 
@@ -154,7 +154,7 @@ describe('index', () => {
     expect(github.getOctokit).toHaveBeenCalledTimes(1)
     expect(github.getOctokit).toHaveBeenCalledWith('aSeCrEtToKeN')
     expect(createCommentSpy).toHaveBeenCalledWith({
-      body: 'https://johndpelingo.atlassian.net/browse/MEME-9001',
+      body: 'JIRA issue: https://johndpelingo.atlassian.net/browse/MEME-9001',
       issue_number: 1,
       owner: 'john-d-pelingo',
       repo: 'jira-link-issue-action',

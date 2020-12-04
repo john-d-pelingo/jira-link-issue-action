@@ -27,7 +27,7 @@ const getInputs = (): {
   }
 }
 
-const getTicketId = ({
+const getIssueId = ({
   boardName,
   branchName,
 }: {
@@ -47,10 +47,10 @@ const getTicketId = ({
 
 const getCommentArguments = ({
   atlassianDomain,
-  ticketId,
+  issueId,
 }: {
   atlassianDomain: string
-  ticketId: string
+  issueId: string
 }): {
   body: string
   issueNumber: number
@@ -74,7 +74,7 @@ const getCommentArguments = ({
   const [owner, repo] = repository.full_name.split('/')
 
   return {
-    body: `${atlassianDomain}/browse/${ticketId}`,
+    body: `JIRA issue: ${atlassianDomain}/browse/${issueId}`,
     issueNumber,
     owner,
     repo,
@@ -84,19 +84,19 @@ const getCommentArguments = ({
 export const main = async (): Promise<void> => {
   try {
     const { atlassianDomain, boardName, branchName, githubToken } = getInputs()
-    const ticketId = getTicketId({
+    const issueId = getIssueId({
       boardName,
       branchName,
     })
 
-    if (!ticketId) {
-      info(`Could not extract the ticket id from branch: ${branchName}`)
+    if (!issueId) {
+      info(`Could not extract the issue ID from branch: ${branchName}`)
       return
     }
 
     const { body, issueNumber, owner, repo } = getCommentArguments({
       atlassianDomain,
-      ticketId,
+      issueId,
     })
 
     const octokit = getOctokit(githubToken)
