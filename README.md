@@ -33,7 +33,7 @@ jobs:
 ## Notes
 
 - This action works with pull requests only as it requires the branch name to
-  determine the issue ID
+  determine the issue ID..
 
 ## License
 
