@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v1.0.1...v1.0.2) (2020-12-04)
+
+
+### Features
+
+* add better documentation ([f34af83](https://github.com/john-d-pelingo/jira-link-issue-action/commit/f34af8350ccdf15ef20f0baf61586328882fde5f))
+* use a friendlier message body ([14ebe48](https://github.com/john-d-pelingo/jira-link-issue-action/commit/14ebe481f87e379b2e4b22817237b2b994ce8258))
+
 ### [1.0.1](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v0.0.8...v1.0.1) (2020-12-04)
 
 
