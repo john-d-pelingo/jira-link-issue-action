@@ -3,7 +3,7 @@
   "extends": ["config:base"],
   "groupName": "all",
   "rangeStrategy": "replace",
-  "prCreation": "status-success",
+  "prCreation": "immediate",
   "schedule": ["every weekend"],
   "timezone": "Europe/Berlin"
 }
