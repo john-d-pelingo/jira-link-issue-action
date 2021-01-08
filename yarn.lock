@@ -476,10 +476,10 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@jdp-dev/commitlint-config@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@jdp-dev/commitlint-config/-/commitlint-config-0.0.11.tgz#36bbfd55038229f550bddcb82d191c0195cb6417"
-  integrity sha512-6nyhG6k7/MsXtLEXnH0YAxlh7DUBiO27xGx46utNeBmPSIQHHni9KzetNdEn0M1uJ1Au/dDRTI2Ms0wOiQ0ejw==
+"@jdp-dev/commitlint-config@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@jdp-dev/commitlint-config/-/commitlint-config-0.0.14.tgz#721ff03b01562640121792842faa19153c18644d"
+  integrity sha512-Mj68A46NACxHuSa5tn9gCFf1RVN3e4h0YM3v3zYBNLAI6bja0DqQ0xA2NdkRZmaQ8DE+TVYFTUMxh0QRTIAG2A==
 
 "@jdp-dev/eslint-config-typescript@^0.0.14":
   version "0.0.14"
@@ -493,15 +493,15 @@
     eslint-plugin-import "^2.22.1"
     typescript "^4.1.2"
 
-"@jdp-dev/prettier-config@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@jdp-dev/prettier-config/-/prettier-config-0.0.11.tgz#332ec1cb776b53dda36e8358c411158a43db2446"
-  integrity sha512-cruXYTfzmoyWZQYTGVUZRe3mhkaJVK9y8y3XVb/oW76oSRBnqjIGMFxnS18TDgDLk+slRQx0t2n/xdFPNuQWKQ==
+"@jdp-dev/prettier-config@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@jdp-dev/prettier-config/-/prettier-config-0.0.14.tgz#1647e01c0452f000798a76f8fa4b29405654e0d9"
+  integrity sha512-9Gd32o88qyCLoK3by48Q+Y/uuRz02z16bl0t+IDu8deZRtAbwXkoWEcBIzBfI+phUAwsoqF2TXZ7tEXpaIK6hQ==
 
-"@jdp-dev/tsconfig@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@jdp-dev/tsconfig/-/tsconfig-0.0.11.tgz#23c53e23ed9b9b352c0ae9a5f95a5254316350a8"
-  integrity sha512-YC4Gk4EICnIVhikYGOuIlSKVIVB0BadS4erl0HyeRkiWKIuRNWPq6J/Mt/k94yKtDKh5l45+4ARNrHM0Tuy2Jg==
+"@jdp-dev/tsconfig@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@jdp-dev/tsconfig/-/tsconfig-0.0.14.tgz#50b2d60c40395b03c2ed87194a460fc2d0f69aa3"
+  integrity sha512-XGmgfqL+0SEwW4PaQuPwLx4I7vA5DtnUBtGi/ogHGOjdqvowJ/yldn18Bsg/bQiC07qsi9fepHn1Y9XVR+5tzQ==
 
 "@jest/console@^26.6.2":
   version "26.6.2"
