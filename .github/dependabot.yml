@@ -1,68 +1,10 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: weekly
-    time: "04:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: husky
-    versions:
-    - 5.1.2
-    - 6.0.0
-  - dependency-name: "@typescript-eslint/eslint-plugin"
-    versions:
-    - 4.14.0
-    - 4.14.1
-    - 4.15.1
-    - 4.18.0
-    - 4.19.0
-    - 4.20.0
-  - dependency-name: "@typescript-eslint/parser"
-    versions:
-    - 4.14.0
-    - 4.14.1
-    - 4.14.2
-    - 4.15.1
-    - 4.18.0
-    - 4.20.0
-  - dependency-name: eslint-plugin-jest
-    versions:
-    - 24.1.5
-    - 24.1.8
-    - 24.3.4
-  - dependency-name: eslint
-    versions:
-    - 7.18.0
-    - 7.21.0
-    - 7.22.0
-    - 7.23.0
-  - dependency-name: "@types/jest"
-    versions:
-    - 26.0.21
-  - dependency-name: typescript
-    versions:
-    - 4.1.5
-    - 4.2.3
-  - dependency-name: "@types/node"
-    versions:
-    - 14.14.22
-    - 14.14.28
-    - 14.14.32
-  - dependency-name: "@octokit/types"
-    versions:
-    - 6.10.0
-    - 6.11.1
-    - 6.12.1
-    - 6.2.1
-    - 6.7.0
-    - 6.8.2
-    - 6.8.5
-  - dependency-name: ts-jest
-    versions:
-    - 26.5.0
-    - 26.5.2
-  - dependency-name: lint-staged
-    versions:
-    - 10.5.3
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: monthly
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: monthly
