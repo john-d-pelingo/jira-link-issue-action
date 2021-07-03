@@ -101,7 +101,7 @@ export const main = async (): Promise<void> => {
 
     const octokit = getOctokit(githubToken)
 
-    await octokit.issues.createComment({
+    await octokit.rest.issues.createComment({
       body,
       issue_number: issueNumber,
       owner,
