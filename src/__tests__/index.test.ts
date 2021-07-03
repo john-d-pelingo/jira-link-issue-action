@@ -134,18 +134,24 @@ describe('index', () => {
 
     const createCommentSpy = jest.fn()
 
-    // @ts-expect-error too much effort to make types work
-    jest.spyOn(github, 'getOctokit').mockImplementation((): {
-      issues: {
-        createComment: () => void
-      }
-    } => {
-      return {
-        issues: {
-          createComment: createCommentSpy,
-        },
-      }
-    })
+    jest.spyOn(github, 'getOctokit').mockImplementation(
+      // @ts-expect-error too much effort to make the other types work
+      (): {
+        rest: {
+          issues: {
+            createComment: () => void
+          }
+        }
+      } => {
+        return {
+          rest: {
+            issues: {
+              createComment: createCommentSpy,
+            },
+          },
+        }
+      },
+    )
 
     process.env.GITHUB_HEAD_REF = 'jdp/feat/MEME-9001-upgrade-meme-level'
 
