@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v1.0.3...v1.1.0) (2021-07-12)
+
+
+### Features
+
+* downgrade types for octo ([386e24b](https://github.com/john-d-pelingo/jira-link-issue-action/commit/386e24bc64b31270708b8a6c9aa13d55d8f7707b))
+* new build ([e204239](https://github.com/john-d-pelingo/jira-link-issue-action/commit/e20423904192b43fc6ad6761e078f212d3395cb5))
+* upgrade major dependencies ([0f9179e](https://github.com/john-d-pelingo/jira-link-issue-action/commit/0f9179eb91fcb4b2ac1384df72ec7af5551b58e3))
+
 ### [1.0.3](https://github.com/john-d-pelingo/jira-link-issue-action/compare/v1.0.2...v1.0.3) (2020-12-04)
 
 
