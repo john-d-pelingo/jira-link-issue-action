@@ -55,8 +55,8 @@
     "@actions/github": "^5.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/cli": "^13.0.0",
+    "@commitlint/config-conventional": "^13.0.0",
     "@jdp-dev/commitlint-config": "^0.0.18",
     "@jdp-dev/eslint-config-typescript": "^0.0.18",
     "@jdp-dev/prettier-config": "^0.0.18",
