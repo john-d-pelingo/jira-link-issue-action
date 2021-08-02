@@ -785,10 +785,10 @@
     "@octokit/types" "^6.0.3"
     universal-user-agent "^6.0.0"
 
-"@octokit/openapi-types@^8.2.0":
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-8.2.0.tgz#25a590c3f41ff9c1a3ffc9897e0f668d9962e04f"
-  integrity sha512-113BfIPwDYBAUA5bDSd4q/DzRDSZlUanupjLHeRAtb3Sw99XJwiP8KHGsGoOwPtzUaszVscf3wbfaA3VCR3uHA==
+"@octokit/openapi-types@^9.3.0":
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-9.3.0.tgz#160347858d727527901c6aae7f7d5c2414cc1f2e"
+  integrity sha512-oz60hhL+mDsiOWhEwrj5aWXTOMVtQgcvP+sRzX4C3cH7WOK9QSAoEtjWh0HdOf6V3qpdgAmUMxnQPluzDWR7Fw==
 
 "@octokit/plugin-paginate-rest@^2.13.3":
   version "2.14.0"
@@ -826,12 +826,12 @@
     node-fetch "^2.6.1"
     universal-user-agent "^6.0.0"
 
-"@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.18.0":
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.18.0.tgz#f547ee5141d8d8d672940f3699d0ab0c13055ad3"
-  integrity sha512-H2xk9vlPWrG1oRzWkOCI/lcYUzskmnrF+suUKaCz+XylmmjyZWl0l+RIuuWX8EGW+uX15kBTRNKE/jpSmPA0IA==
+"@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.18.0", "@octokit/types@^6.23.0":
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.23.0.tgz#b39f242b20036e89fa8f34f7962b4e9b7ff8f65b"
+  integrity sha512-eG3clC31GSS7K3oBK6C6o7wyXPrkP+mu++eus8CSZdpRytJ5PNszYxudOQ0spWZQ3S9KAtoTG6v1WK5prJcJrA==
   dependencies:
-    "@octokit/openapi-types" "^8.2.0"
+    "@octokit/openapi-types" "^9.3.0"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
