@@ -61,7 +61,7 @@
     "@jdp-dev/eslint-config-typescript": "^0.0.18",
     "@jdp-dev/prettier-config": "^0.0.18",
     "@jdp-dev/tsconfig": "^0.0.18",
-    "@octokit/types": "^6.23.0",
+    "@octokit/types": "^6.26.0",
     "@types/jest": "^27.0.0",
     "@types/node": "^16.4.10",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
