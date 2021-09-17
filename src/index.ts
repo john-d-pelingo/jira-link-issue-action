@@ -108,7 +108,9 @@ export const main = async (): Promise<void> => {
       repo,
     })
   } catch (error) {
-    setFailed(error)
+    if (error instanceof Error) {
+      setFailed(error)
+    }
   }
 }
 
