@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Link Jira Issue
-        uses: john-d-pelingo/jira-link-issue-action@v1.0.3
+        uses: john-d-pelingo/jira-link-issue-action@v1
         with:
           atlassian-domain: 'https://johndpelingo.atlassian.net'
           board-name: 'MEME'
