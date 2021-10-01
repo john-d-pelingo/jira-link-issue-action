@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^13.0.0",
-    "@commitlint/config-conventional": "^13.0.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "@jdp-dev/commitlint-config": "^0.0.19",
     "@jdp-dev/eslint-config-typescript": "^0.0.19",
     "@jdp-dev/prettier-config": "^0.0.19",
