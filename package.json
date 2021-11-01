@@ -63,7 +63,7 @@
     "@jdp-dev/tsconfig": "^0.0.19",
     "@octokit/types": "^6.31.3",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.2",
+    "@types/node": "^16.11.6",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "@zeit/ncc": "^0.22.3",
