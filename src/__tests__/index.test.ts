@@ -1,7 +1,7 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import { context } from '@actions/github'
-import { WebhookPayload } from '@actions/github/lib/interfaces'
+import type { WebhookPayload } from '@actions/github/lib/interfaces'
 
 import { main } from '..'
 
