@@ -21,4 +21,4 @@ jobs:
       - name: Run build command
         run: yarn build
       - name: Upload coverage to codecov
-        uses: codecov/codecov-action@v2.1.0
+        uses: codecov/codecov-action@v3.1.1
