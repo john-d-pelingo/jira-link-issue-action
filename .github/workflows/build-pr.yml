@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Use Node 14
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v3.5.1
         with:
           node-version: 14
       - name: Install dependencies with yarn
@@ -31,7 +31,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Use Node 14
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v3.5.1
         with:
           node-version: 14
       - name: Install dependencies with yarn
