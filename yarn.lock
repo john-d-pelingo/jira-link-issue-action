@@ -808,10 +808,10 @@
   resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-10.1.1.tgz#74607482d193e9c9cc7e23ecf04b1bde3eabb6d8"
   integrity sha512-ygp/6r25Ezb1CJuVMnFfOsScEtPF0zosdTJDZ7mZ+I8IULl7DP1BS5ZvPRwglcarGPXOvS5sHdR0bjnVDDfQdQ==
 
-"@octokit/openapi-types@^11.2.0":
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-11.2.0.tgz#b38d7fc3736d52a1e96b230c1ccd4a58a2f400a6"
-  integrity sha512-PBsVO+15KSlGmiI8QAzaqvsNlZlrDlyAJYcrXBCvVUxCp7VnXjkwPoFHgjEJXx3WF9BAwkA6nfCUA7i9sODzKA==
+"@octokit/openapi-types@^21.0.0":
+  version "21.0.0"
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-21.0.0.tgz#95bb24b6f427d82092c7e6792d686df92d0a1fd4"
+  integrity sha512-B6/NBvsNQT5UWYWSFcUT55XTMZBHyflNke7Ryvhs3dLe3I2TTPwpGPMib70YS1Ha5Iccc5CtXTLU7lHstC5e3Q==
 
 "@octokit/plugin-paginate-rest@^2.13.3":
   version "2.14.0"
@@ -849,19 +849,19 @@
     node-fetch "^2.6.1"
     universal-user-agent "^6.0.0"
 
+"@octokit/types@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-13.0.0.tgz#6828279d1c0af76753a16d64b96e594aa0a135d0"
+  integrity sha512-jSOgEoFZvjg78txlb7cuRTAEvyyQkIEB4Nujg5ZN7E1xaICsr8A0X045Nwb1wUWNrBUHBHZNtcsDIhk8d8ipCw==
+  dependencies:
+    "@octokit/openapi-types" "^21.0.0"
+
 "@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.18.0":
   version "6.27.0"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.27.0.tgz#2ffcd4d1cf344285f4151978c6fd36a2edcdf922"
   integrity sha512-ha27f8DToxXBPEJdzHCCuqpw7AgKfjhWGdNf3yIlBAhAsaexBXTfWw36zNSsncALXGvJq4EjLy1p3Wz45Aqb4A==
   dependencies:
     "@octokit/openapi-types" "^10.1.0"
-
-"@octokit/types@^6.34.0":
-  version "6.34.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.34.0.tgz#c6021333334d1ecfb5d370a8798162ddf1ae8218"
-  integrity sha512-s1zLBjWhdEI2zwaoSgyOFoKSl109CUcVBCc7biPJ3aAf6LGLU6szDvi31JPU7bxfla2lqfhjbbg/5DdFNxOwHw==
-  dependencies:
-    "@octokit/openapi-types" "^11.2.0"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
